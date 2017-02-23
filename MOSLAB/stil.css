@@ -1,0 +1,88 @@
+#mainContainer{
+	width: 700px;
+	height: 100%;
+}
+.box{
+	width: 200px;
+	height: 400px;
+	/*border: 2px solid black;*/
+	margin: 5px;
+	float: left;
+	background-color: #f2f2f2;
+
+}
+.naziv{
+	width: 200px;
+	height: 50px;
+	/*border:2px solid blue;*/
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	background-color: #d9d9d9;
+	-webkit-box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
+
+}
+.opis{
+	width: 200px;
+	height: 80px;
+	margin-top: 3px;
+	/*border:2px solid blue;*/
+	text-align: center;
+	background-color: #d9d9d9;
+	-webkit-box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
+}
+.slike{
+	width: 195px;
+	height: 210px;
+	/*border:2px solid blue;*/
+}
+.cena{
+	width: 195px;
+	height: 60px;
+	/*border:2px solid blue;*/
+	text-align: right;
+}
+.proizDugme {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: none;
+  float: left;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.proizDugme span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.proizDugme span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.proizDugme:hover span {
+  padding-right: 25px;
+}
+
+.proizDugme:hover span:after {
+  opacity: 1;
+  right: 0;
+}
